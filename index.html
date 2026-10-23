@@ -307,13 +307,8 @@ img{display:block;max-width:100%}
 .zone-in{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center}
 @media(max-width:900px){.zone-in{grid-template-columns:1fr}}
 .radar{width:100%;max-width:340px}
-.towns{display:flex;flex-wrap:wrap;gap:.55rem}
-.town{
-  font-size:.95rem;padding:.5rem .9rem;border:1px solid var(--stone-3);border-radius:100px;
-  background:var(--stone-2);color:var(--ink);
-}
-.town.core{background:var(--ink);color:var(--stone);border-color:var(--ink);font-weight:600}
-.zone-note{margin-top:1.5rem;font-size:.97rem;color:var(--ink-soft)}
+.zone-main{font-family:var(--display);font-weight:800;font-stretch:112%;font-size:clamp(1.5rem,3.2vw,2.2rem);line-height:1.1;letter-spacing:-.015em;color:var(--ink);margin:0}
+.zone-note{margin-top:1.1rem;max-width:52ch;font-size:.97rem;color:var(--ink-soft)}
 
 /* ---------- FAQ ---------- */
 .faq{max-width:820px}
@@ -709,29 +704,13 @@ img{display:block;max-width:100%}
       </div>
 
       <div class="rise">
-        <div class="towns">
-          <span class="town core">Sarlat-la-Canéda</span>
-          <span class="town">Vitrac</span>
-          <span class="town">Carsac-Aillac</span>
-          <span class="town">La Roque-Gageac</span>
-          <span class="town">Domme</span>
-          <span class="town">Beynac-et-Cazenac</span>
-          <span class="town">Castelnaud-la-Chapelle</span>
-          <span class="town">Sainte-Nathalène</span>
-          <span class="town">Saint-Geniès</span>
-          <span class="town">Salignac-Eyvigues</span>
-          <span class="town">Montignac-Lascaux</span>
-          <span class="town">Saint-Cyprien</span>
-          <span class="town">Le Bugue</span>
-          <span class="town">Cénac-et-Saint-Julien</span>
-          <span class="town">Daglan</span>
-          <span class="town">Souillac</span>
-          <span class="town">Gourdon</span>
-          <span class="town">Belvès</span>
-        </div>
+        <p class="zone-main">Sarlat-la-Canéda et ses alentours</p>
         <p class="zone-note">
-          Liste indicative : nous nous déplaçons à Sarlat-la-Canéda et dans ses alentours.
-          Votre commune n’apparaît pas ? <a href="#contact" style="color:var(--rouge)">Appelez-nous</a>, nous vous répondrons tout de suite.
+          Un supplément peut être demandé en fonction du lieu d’intervention : il vous est annoncé
+          au téléphone, avec le devis, avant tout déplacement.
+        </p>
+        <p class="zone-note">
+          Un doute sur votre commune ? <a href="#contact" style="color:var(--rouge)">Appelez-nous</a>, nous vous répondrons tout de suite.
         </p>
       </div>
     </div>
@@ -767,7 +746,7 @@ img{display:block;max-width:100%}
       </details>
       <details>
         <summary>J’habite hors de Sarlat, vous déplacez-vous ?</summary>
-        <div class="ans">Oui. Nous intervenons à Sarlat-la-Canéda et dans ses alentours. En cas de doute sur votre commune, appelez-nous.</div>
+        <div class="ans">Oui. Nous intervenons à Sarlat-la-Canéda et dans ses alentours. Selon le lieu, un supplément peut être demandé : il vous est annoncé avec le devis, avant tout déplacement.</div>
       </details>
       <details>
         <summary>Comment puis-je régler l’intervention ?</summary>
